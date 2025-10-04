@@ -11,14 +11,6 @@
 
 const songs = [
     {
-        title: "Bohemian Rhapsody",
-        artist: "Queen",
-        language: "English",
-        category: "Rock",
-        topPick: true,
-        image: "bohemian-rhapsody.jpg"  // Optional: add image filename
-    },
-    {
         title: "Mere Gaon Aaoge",
         artist: "Rahgir",
         language: "Hindi",
@@ -27,12 +19,284 @@ const songs = [
         image: "Mere-Gaon-Aaoge.png"  // Optional: add image filename
     },
     {
+        title: "MaaeriEuphoria",
+        artist: "Palash Sen",
+        language: "Hindi",
+        category: "Romantic Indie",
+        topPick: false,
+        image: "MaaeriEuphoria.png"
+    },
+    {
+        title: "When We Feel Young",
+        artist: "When Chai Met Toast",
+        language: "English",
+        category: "Romantic Indie",
+        topPick: false,
+        image: "When-We-Feel-Young.png"
+    },
+    {
         title: "Tum Hi Ho",
         artist: "Arijit Singh",
         language: "Hindi",
         category: "Romantic",
         topPick: true,
-        image: "tum-hi-ho.jpg"  // Optional: add image filename
+        image: "tum-hi-ho.png"  // Optional: add image filename
+    },
+    {
+        title: "Kahaani",
+        artist: "When Chai Met Toast",
+        language: "Hindi, English, Malyali",
+        category: "Romantic Indie",
+        topPick: false,
+        image: "kahani-wcmt.png"
+    },
+    {
+        title: "Aaftaab",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
+    },
+    {
+        title: "Aakhri Salam",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
+    },
+    {
+        title: "Dil Nawaz",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
+    },
+    {
+        title: "Mere Yaar",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
+    },
+    {
+        title: "Pahadon Mein",
+        artist: "Salman Elahi",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "pahadon_me.png"
+    },
+    {
+        title: "Tere Pyar Mein",
+        artist: "Kavish",
+        language: "Hindi",
+        category: "Romantic Sad",
+        topPick: false,
+        image: "tere_pyar_mein.png"
+    },
+    {
+        title: "Bandeh",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
+    },
+    {
+        title: "Faasle",
+        artist: "Kaavish & Quratulain Balouch",
+        language: "Hindi",
+        category: "Romantic Sad",
+        topPick: false,
+        image: "Faasle.png"
+    },
+    {
+        title: "Khudi",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
+    },
+    {
+        title: "Tujh Mein Rab Dikhta Hai",
+        artist: "Rahat Fateh Ali Khan",
+        language: "Hindi",
+        category: "Romantic",
+        topPick: false,
+        image: "tujhme-rab-dikhta-hai.png"
+    },
+    {
+        title: "Main Phir Bhi Tumko Chahunga",
+        artist: "Arijit Singh, Shashaa Tirupati",
+        language: "Hindi",
+        category: "Romantic",
+        topPick: false,
+        image: "phir-bhi-tumko-chahunga.png"
+    },
+    {
+        title: "Tum Jo Aaye",
+        artist: "Rahat Fateh Ali Khan, Alka Yagnik",
+        language: "Hindi",
+        category: "Romantic",
+        topPick: false,
+        image: "tum-jo-aaye-zindagi-me.png"
+    },
+    {
+        title: "Channa Mereya",
+        artist: "Arijit Singh",
+        language: "Hindi",
+        category: "Romantic Sad",
+        topPick: false,
+        image: "Channa-Mereya.png"
+    },
+    {
+        title: "Raabta",
+        artist: "Arijit Singh, Shreya Ghosal",
+        language: "Hindi",
+        category: "Romantic Indie",
+        topPick: false,
+        image: "Raabta.png"
+    },
+    {
+        title: "Agar Tum Saath Ho",
+        artist: "Alka Yagnik, Arijit Singh",
+        language: "Hindi",
+        category: "Romantic Sad",
+        topPick: false,
+        image: "Agar-Tum-Saath-Ho.png"
+    },
+    {
+        title: "Suno Na Sangemarmar",
+        artist: "Arijit Singh",
+        language: "Hindi",
+        category: "Romantic",
+        topPick: false,
+        image: "Suno-Na-Sangemarmar.png"
+    },
+    {
+        title: "Janam Janam",
+        artist: "Arijit Singh",
+        language: "Hindi",
+        category: "Romantic",
+        topPick: false,
+        image: "Janam-Janam.png"
+    },
+    {
+        title: "Aaj Jaane Ki Zid Na Karo",
+        artist: "Farida Khanum",
+        language: "Urdu",
+        category: "Romantic Sad",
+        topPick: false,
+        image: "Aaj-Jaane-Ki-Zidd.png"
+    },
+    {
+        title: "Zaalima",
+        artist: "Arijit Singh, Harshdeep Kaur",
+        language: "Hindi",
+        category: "Romantic",
+        topPick: false,
+        image: "Zaalima.png"
+    },
+    {
+        title: "Tera Ban Jaunga",
+        artist: "Akhil Sachdeva, Tulsi Kumar",
+        language: "Hindi",
+        category: "Romantic",
+        topPick: false,
+        image: "Tera-Ban-Jaunga.png"
+    },
+    {
+        title: "Tu Hi Hai",
+        artist: "Rahat Fateh Ali Khan",
+        language: "Hindi",
+        category: "Romantic Indie",
+        topPick: false,
+        image: "Tu-Hi-Hai.png"
+    },
+    {
+        title: "Hasi",
+        artist: "Amit Mishra, Shreya Ghosal",
+        language: "Hindi",
+        category: "Romantic Sad",
+        topPick: false,
+        image: "Hasi.png"
+    },
+    {
+        title: "Mera Mann",
+        artist: "Amit Trivedi",
+        language: "Hindi",
+        category: "Indie",
+        topPick: false,
+        image: "Mera-Mann.png"
+    },
+    {
+        title: "Khaab",
+        artist: "Aatif Aslam",
+        language: "Hindi",
+        category: "Romantic Indie",
+        topPick: false,
+        image: "Khaab.png"
+    },
+    {
+        title: "Chupke Chupke",
+        artist: "Shankar Ehsaan Loy",
+        language: "Hindi",
+        category: "Indie",
+        topPick: false,
+        image: "Chupke-Chupke.png"
+    },
+    {
+        title: "Dil Dhadakne Do",
+        artist: "Shankar Ehsaan Loy",
+        language: "Hindi",
+        category: "Indie",
+        topPick: false,
+        image: "Dil-Dhadakne-Do.png"
+    },
+    {
+        title: "Dil Mere",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
+    },
+    {
+        title: "Choo Lo",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
+    },
+    {
+        title: "Dhaga (Aspirants)",
+        artist: "Nilotpal Boh",
+        language: "Hindi",
+        category: "Romantic Sad",
+        topPick: true,
+        image: "Dhaga_Aspirants.png"  // Optional: add image filename
+    },
+    {
+        title: "Zihaal e Miskin",
+        artist: " Vishal Mishra & Shreya Ghosha",
+        language: "Urdu",
+        category: "Romantic",
+        topPick: true,
+        image: "zihaal-e-miskin.png"  // Optional: add image filename
+    },
+    {
+        title: "Aaoge Tum Kabhi",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
     },
     {
         title: "Shape of You",
@@ -41,6 +305,14 @@ const songs = [
         category: "Pop",
         topPick: false
         // No image specified - will use emoji fallback
+    },
+    {
+        title: "Mizaaj",
+        artist: "The Local Train",
+        language: "Hindi",
+        category: "Warmth",
+        topPick: false,
+        image: "Aaftaab.png"
     },
     {
         title: "Kun Faya Kun",
@@ -55,13 +327,6 @@ const songs = [
         language: "English",
         category: "Classic",
         topPick: true
-    },
-    {
-        title: "Tera Ban Jaunga",
-        artist: "Tulsi Kumar, Akhil Sachdeva",
-        language: "Hindi",
-        category: "Romantic",
-        topPick: false
     },
     {
         title: "Stairway to Heaven",
